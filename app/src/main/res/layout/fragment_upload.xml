@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/uploadImageView1"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:maxHeight="400dp"
+            android:padding="10dp"
+            android:scaleType="centerCrop"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:shapeAppearanceOverlay="@style/circular"
+            app:strokeColor="@color/blue"
+            app:strokeWidth="3dp"
+            tools:ignore="NestedWeights" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/uploadImageView2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:maxHeight="400dp"
+            android:padding="10dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:shapeAppearanceOverlay="@style/circular"
+            app:strokeColor="@color/blue"
+            app:strokeWidth="3dp"
+            tools:ignore="NestedWeights" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/uploadImageView3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:maxHeight="400dp"
+            android:padding="10dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:shapeAppearanceOverlay="@style/circular"
+            app:strokeColor="@color/blue"
+            app:strokeWidth="3dp"
+            tools:ignore="NestedWeights" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/uploadImageView4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:maxHeight="400dp"
+            android:padding="10dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:shapeAppearanceOverlay="@style/circular"
+            app:strokeColor="@color/blue"
+            app:strokeWidth="3dp"
+            tools:ignore="NestedWeights" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/uploadBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:layout_marginBottom="50dp"
+            android:background="@color/blue"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="10dp"
+            android:text="@string/upload_from_gallery"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
